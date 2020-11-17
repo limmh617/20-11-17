@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>11주차</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  </head>
+
+
+  <style>
+    html {height: 100%;}
+
+    body {height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #E0E0E0;}
+
+    a {text-decoration: none; color: #000;}
+
+    ol, ul {list-style: none;}
+
+    header {width: 100%;}
+    
+    div2 {color: rgb(213, 95, 56);}
+
+
+    .header {width: 1300px;
+    height: 100px;
+    margin: 0px auto;
+    box-sizing: border-box;
+    padding: 0px 20px;}
+
+    .header .inner {height: 100%;
+    position: relative;}
+
+    .header h1 {font-size: 40px;
+    font-style: italic;
+	font-family: 'Bebas Neue', cursive;
+    position: absolute;
+    left: 10px;
+    bottom: -10px;
+    margin: 0px;}
+
+    .header .nav {text-align: right;
+    height: 100px;}
+
+    .header .nav ul {height: 100%;
+    position: absolute;
+    right: 0;
+    margin: 0px;}
+
+    .header .nav ul:after {content: "";
+    display: block;
+    clear: both;}
+
+    .header .nav li {width: 180px;
+    height: 100px;
+    border-left: 1px solid #707070;
+    float: left;
+    padding: 0 25px;
+    font-size: 30px;
+    font-style: italic;
+    font-family: 'Bebas Neue', cursive;
+    line-height: 180px;
+    text-align: left;
+    }
+
+    .header .nav a {position: relative;}
+
+    .main .section {
+      width: 1300px;
+      height: 700px;
+      background-color: #C6C6C6;
+      margin: 35px auto;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .main .section .page1_img1 {position: absolute;
+    height: 410px;
+    top: -100px;
+    left: -50px;
+    z-index: 1;
+    transition: 1s;}
+
+    .main .section .page1_img1:hover {top: -130px;
+    cursor: pointer;}
+
+    .main .section .page1_img2 {position: absolute;
+    height: 50px;
+    top: 70px;
+    left: 400px;
+    z-index: 2;
+    transition: 1s;}
+
+    .main .section .page1_img2:hover {transform: scale(1.2);
+    cursor: pointer;}
+
+    .main .section .page1_img3 {position: absolute;
+    height: 170px;
+    top: 190px;
+    left: 190px;
+    z-index: 2;
+    transition: 1s;}
+
+    .main .section .page1_img3:hover {transform: scale(1.1);
+    cursor: pointer;
+    }
+
+    .main .section .page1_img4 {position: absolute;
+    height: 250px;
+    top: 160px;
+    left: 310px;
+    opacity: 0.5;
+    transition: 1s;}
+
+    .main .section .page1_img4:hover {transform: scale(1.1);
+    cursor: pointer;}
+
+
+    .main .section .page1_img5 {position: absolute;
+    height: 310px;
+    top: 390px;
+    left: 60px;
+    z-index: 2;
+    transition: 1s;}
+
+    .main .section .page1_img5:hover {transform: scale(1.1);
+    cursor: pointer;}
+
+    .main .section .page1_img6 {position: absolute;
+    height: 250px;
+    top: 450px;
+    left: 60px;}
+
+    .main .section .page1_img7 {position: absolute;
+    height: 460px;
+    top: 90px;
+    left: 490px;
+    z-index: 2;
+    transition: 0.8s;
+    animation: motion 2.0s linear 0s infinite;}
+
+    .main .section .page1_img7:hover {cursor: pointer;}
+
+    @keyframes motion {0% {top: 90px;}
+	50% {top: 60px;}
+	100% {top: 90px;}}
+
+    .main .section .page1_img8 {position: absolute;
+    height: 280px;
+    top: 80px;
+    left: 550px;
+    z-index: 1;}
+
+    .main .section .page1_img9 {position: absolute;
+    height: 110px;
+    top: 450px;
+    left: 650px;
+    z-index: 1;}
+
+    .main .section .page1_img10 {position: absolute;
+    height: 70px;
+    top: 580px;
+    left: 540px;
+    z-index: 1;
+    transition: 1s;}
+
+    .main .section .page1_img10:hover {top: 600px;
+    transform: rotate(180deg);
+    cursor: pointer;}
+
+    .main .section .page1_img11 {position: absolute;
+    height: 190px;
+    top: 80px;
+    left: 920px;
+    z-index: 1;
+    transition: 1s;}
+
+    .main .section .page1_img11:hover {transform: scale(1.1);
+    cursor: pointer;}
+
+    .main .section .page1_img12 {position: absolute;
+    height: 110px;
+    top: 100px;
+    left: 1010px;
+    z-index: 2;
+    transition: 1s;}
+
+    .main .section .page1_img12:hover {transform: scale(1.1);
+    cursor: pointer;}
+
+    .main .section .page1_img13 {position: absolute;
+    height: 150px;
+    top: 110px;
+    left: 1120px;
+    z-index: 3;
+    transition: 1s;}
+
+    .main .section .page1_img13:hover {transform: scale(1.1);
+    cursor: pointer;}
+
+    .main .section .page1_img14 {position: absolute;
+    height: 320px;
+    top: 300px;
+    left: 921px;
+    z-index: 1;
+    transition: 1s;}
+
+    .main .section .page1_img14:hover {transform: scale(1.1);
+    cursor: pointer;}
+
+    .main .section .page1_img15 {position: absolute;
+    height: 470px;
+    top: 320px;
+    left: 1050px;
+    z-index: 1;
+	transition: 1s;}
+
+    .main .section .page1_img15:hover {top: 290px;
+    cursor: pointer;}
+  </style>
+
+
+  <body>
+    <header>
+      <div class="header">
+        <div class="inner">
+          <h1><a href="index.html"><div2>Nike shoes</div2> for $1,000?</a></h1>
+          <div class="nav">
+            <ul>
+              <li><a href="index.html" class="menu1">LOOK & FEEL</a></li>
+              <li><a href="detail.html" class="menu2">DESIGN STRATEGY</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      <section class="section">
+        <img class="page1_img1" src="page1_img1.png">
+        <img class="page1_img2" src="page1_img2.png">
+        <img class="page1_img3" src="page1_img3.png">
+        <img class="page1_img4" src="page1_img4.png">
+        <img class="page1_img5" src="page1_img5.png">
+        <img class="page1_img6" src="page1_img6.png">
+        <img class="page1_img7" src="page1_img7.png">
+        <img class="page1_img8" src="page1_img8.png">
+        <img class="page1_img9" src="page1_img9.png">
+        <img class="page1_img10" src="page1_img10.png">
+        <img class="page1_img11" src="page1_img11.png">
+        <img class="page1_img12" src="page1_img12.png">
+        <img class="page1_img13" src="page1_img13.png">
+        <img class="page1_img14" src="page1_img14.png">
+        <img class="page1_img15" src="page1_img15.png">
+      </section>
+    </div>
+  </body>
+</html>

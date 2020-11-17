@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>11주차</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  </head>
+
+
+  <style media="screen">
+    html {height: 100%;}
+
+    body {height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #E0E0E0;}
+
+    a {text-decoration: none; color: #000;}
+
+    ol, ul {list-style: none;}
+
+    header {width: 100%;}
+
+    div2 {color: rgb(213, 95, 56);}
+
+    .header {width: 1300px;
+    height: 100px;
+    margin: 0px auto;
+    box-sizing: border-box;
+    padding: 0px 20px;}
+
+    .header .inner {height: 100%;
+    position: relative;}
+
+    .header h1 {font-size: 40px;
+    font-style: italic;
+    font-family: 'Bebas Neue', cursive;
+    position: absolute;
+    left: 10px;
+    bottom: -10px;
+    margin: 0px;}
+
+    .header .nav {text-align: right;
+    height: 100px;}
+
+    .header .nav ul {height: 100%;
+    position: absolute;
+    right: 0;
+    margin: 0px;}
+
+    .header .nav ul:after {content: "";
+    display: block;
+    clear: both;}
+
+    .header .nav li {width: 180px;
+    height: 100px;
+    border-left: 1px solid #707070;
+    float: left;
+    padding: 0 25px;
+    font-size: 30px;
+    font-style: italic;
+    font-family: 'Bebas Neue', cursive;
+    line-height: 180px;
+    text-align: left;}
+
+    .header .nav a {position: relative;}
+
+    .main .section {width: 1300px;
+    height: 700px;
+    background-color: #C6C6C6;
+    margin: 35px auto;
+    overflow: hidden;}
+
+    .main .section .inner {width: 800px;
+    height: 100%;
+    margin: 0px auto;}
+
+    .main .section .inner:after {content: '';
+    display: block;
+    clear: both;}
+
+    .main .section .inner .area {float: left;}
+
+    .main .section .inner .area1 {width: 200px;
+    box-sizing: border-box;}
+
+    .main .section .inner .area2 {width: 200px;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 1.7;
+    word-break: keep-all;}
+
+    .main .section .inner .area3 {width: 400px;
+    padding-left: 80px;
+    box-sizing: border-box;}
+
+    .main .section .area1 .title {font-family: 'Bebas Neue', cursive;
+    margin-top: 150px;}
+
+    .main .section .area1 .page2_img1 {height: 300px;
+    top: 200px;
+    left: 0px;}
+
+    .main .section .area2 .txt {font-size: 13px;
+    margin-top: 185px;
+    margin-left: 20px;}
+
+    .main .section .area3 .title1 {font-family: 'Bebas Neue', cursive;
+    margin-top: 150px;}
+
+    .main .section .area3 .title2 {font-family: 'Bebas Neue', cursive;
+    margin-top: 50px;}
+
+    .main .section .area3 .page2_img2 {height: 80px;
+    margin-top: 15px;}
+
+    .main .section .area3 .content {font-family: 'Bebas Neue', cursive;
+    line-height: 8px;
+    font-size: 20px;}
+
+    .main .section .area3 .first {margin-top: 40px;}
+
+    .main .section .area3 ul {margin: 0px;
+    padding: 0px;
+    width: 350px;}
+
+    .main .section .area3 ul:after {content: '';
+    display: block;
+    clear: both;}
+
+    .main .section .area3 li {float: left;
+    height: 50px;
+    width: 50px;
+    margin-right: 15px;
+    cursor: pointer;}
+
+    .main .section .area3 li:nth-child(1) {background-color: #E55628;}
+
+    .main .section .area3 li:nth-child(2) {background-color: white;}
+
+    .main .section .area3 li:nth-child(3) {background-color: #DFDCE3;}
+
+    .main .section .area3 li:nth-child(4) {background-color: #5D5D5D;}
+
+    .main .section .area3 li:nth-child(5) {background-color: black;}
+  </style>
+
+  <body>
+    <header>
+      <div class="header">
+        <div class="inner">
+          <h1><a href="index.html"><div2>Nike shoes</div2> for $1,000?</a></h1>
+          <div class="nav">
+            <ul>
+              <li><a href="index.html" class="menu1">LOOK & FEEL</a></li>
+              <li><a href="detail.html" class="menu2">DESIGN STRATEGY</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      <section class="section">
+        <div class="inner">
+          <div class="area area1">
+            <p class="title">Design Motif</p>
+            <img class="page2_img1" src="page2_img1.png" alt="page2_img1">
+          </div>
+          <div class="area area2">
+            <div class="txt">
+              개인 프로젝트에서는 나이키 스니커즈의 가격 이슈와 함께 제품에 대한 정보 역시 다룰 예정입니다. 따라서, 제품의 가격이나 정보를 표시하는 가격 태그나 제품의 사이즈탭을 디자인 모티프로 삼아 웹 페이지를 디자인할 계획입니다.
+            </div>
+          </div>
+          <div class="area area3">
+            <p class="title1">Font</p>
+            <img class="page2_img2" src="page2_img2.png" alt="page2_img2">
+            <p class="content first">Futura PT Extra Bold</p>
+            <p class="content">Condensed Oblique</p>
+            <p class="title2">Color</p>
+            <ul>
+              <li class="color1"></li>
+              <li class="color2"></li>
+              <li class="color3"></li>
+              <li class="color4"></li>
+              <li class="color5"></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
